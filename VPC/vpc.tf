@@ -20,7 +20,7 @@ resource "aws_network_acl" "example_acl" {
     Name = "example_acl"
   }
 }
-# internet GW
+#  Create internet GW
 resource "aws_internet_gateway" "main_igw" {
   vpc_id = aws_vpc.main_vpc.id
   tags = {
