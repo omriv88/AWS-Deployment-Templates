@@ -12,7 +12,7 @@ resource "aws_vpc" "main_vpc" {
     Name = "main-vpc"
   }
 }
-
+ 
 resource "aws_subnet" "subnet1" {
   vpc_id            = aws_vpc.main_vpc.id
   cidr_block        = "10.10.10.0/24"
